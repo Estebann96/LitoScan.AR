@@ -1,5 +1,29 @@
-Este proyecto surge de la necesidad de obtener modelos digitales de cortes petrográficos con el objetivo de facilitar su análisis mediante tecnologías de inteligencia artificial.
+# LitoScan.AR
 
-Para lograr este objetivo, se ha tomado como base el proyecto original PiAutoStage (disponible en https://sites.google.com/msu.edu/piautostage/home), desarrollado por R. Alex Steiner y Tyrone O. Rooney. A partir de este se ha desarrollado LitoScan.AR (disponible en https://sites.google.com/view/litoscan-ar), una versión modificada que incorpora mejoras tanto en la captura de imágenes como en la accesibilidad para los usuarios.
+**LitoScan.AR** es un proyecto desarrollado para digitalizar cortes delgados petrográficos con alta calidad, facilitando su análisis posterior mediante técnicas de inteligencia artificial. Su objetivo principal es automatizar la obtención de mosaicos de imágenes microscópicas, optimizando el trabajo de caracterización de materiales geológicos.
 
-Las modificaciones implementadas en LitoScan.AR permiten una toma de imágenes más eficiente, asegurando una mayor calidad en los modelos digitales generados, lo que a su vez amplía las posibilidades de aplicación en estudios petrográficos asistidos por inteligencia artificial.
+## 🔍 Origen del proyecto
+
+Este desarrollo toma como punto de partida el proyecto [PiAutoStage](https://sites.google.com/msu.edu/piautostage/home), creado por **R. Alex Steiner** y **Tyrone O. Rooney**. Sobre esa base, **LitoScan.AR** presenta una versión modificada y adaptada, disponible en:  
+🔗 [https://sites.google.com/view/litoscan-ar](https://sites.google.com/view/litoscan-ar)
+
+## 🚀 Mejoras incorporadas
+
+Las principales modificaciones implementadas en LitoScan.AR incluyen:
+
+- **Optimización del sistema de captura de imágenes** para generar mosaicos de mayor calidad.
+- **Interfaz de usuario simplificada**, orientada a facilitar su uso por parte de geólogos y técnicos.
+- **Mayor estabilidad en la ejecución automática**, reduciendo errores durante el escaneo.
+- **Compatibilidad con flujos de trabajo en inteligencia artificial**, permitiendo usar los mosaicos como entrada para modelos de clasificación o segmentación petrográfica.
+
+## 🧠 Aplicaciones
+
+- Análisis petrográfico asistido por IA  
+- Generación de bases de datos digitales de láminas delgadas  
+- Capacitación y docencia en petrografía  
+- Difusión y documentación de colecciones petrográficas
+
+## 🧩 Créditos
+
+Proyecto basado en [PiAutoStage](https://sites.google.com/msu.edu/piautostage/home), por **R. Alex Steiner** y **Tyrone O. Rooney**.  
+Desarrollado y adaptado como parte de una iniciativa de automatización y accesibilidad en el ámbito geológico.
