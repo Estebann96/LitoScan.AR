@@ -4,8 +4,7 @@
 
 ## 🔍 Origen del proyecto
 
-Este desarrollo toma como punto de partida el proyecto [PiAutoStage](https://sites.google.com/msu.edu/piautostage/home), creado por **R. Alex Steiner** y **Tyrone O. Rooney**. Sobre esa base, **LitoScan.AR** presenta una versión modificada y adaptada, disponible en:  
-🔗 [LitoScan.AR](https://sites.google.com/view/litoscan-ar)
+Este desarrollo toma como punto de partida el proyecto [PiAutoStage](https://sites.google.com/msu.edu/piautostage/home), creado por **R. Alex Steiner** y **Tyrone O. Rooney**. Sobre esa base, [LitoScan.AR](https://sites.google.com/view/litoscan-ar) presenta una versión modificada y adaptada.
 
 ## 🚀 Mejoras incorporadas
 
