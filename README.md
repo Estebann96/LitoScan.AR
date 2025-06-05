@@ -1,6 +1,6 @@
 # LitoScan.AR
 
-**LitoScan.AR** es un proyecto desarrollado para digitalizar cortes delgados petrográficos con alta calidad, facilitando su análisis posterior mediante técnicas de inteligencia artificial. Su objetivo principal es automatizar la obtención de mosaicos de imágenes microscópicas, optimizando el trabajo de caracterización de materiales geológicos.
+**LitoScan.AR** es un proyecto desarrollado para digitalizar cortes delgados petrográficos, lo que nos permite su análisis posterior mediante técnicas de inteligencia artificial. Su objetivo principal es automatizar la obtención de mosaicos de imágenes microscópicas.
 
 ## 🔍 Origen del proyecto
 
