@@ -8,12 +8,17 @@ Este desarrollo toma como punto de partida el proyecto [PiAutoStage](https://sit
 
 ## 🚀 Mejoras incorporadas
 
-Las principales modificaciones implementadas en LitoScan.AR incluyen:
+Las siguientes mejoras fueron implementadas para optimizar el rendimiento y la experiencia de uso del sistema::
 
-- **Estabilidad del enfoque:** Se detectó pérdida de foco entre capturas consecutivas, lo que motivó el rediseño del carro de desplazamiento.
-- **Optimización del movimiento:** Se ajustó el código de control del sistema, incorporando tiempos de estabilización previos a cada captura para minimizar vibraciones y mejorar la calidad de imagen.
-- **Configuración flexible:** Se desarrolló una interfaz que permite al usuario definir el número de pasadas, establecer manualmente el punto de enfoque y ajustar parámetros de la cámara.
-- **Gestión de configuraciones personalizadas:** Se implementó un sistema que permite guardar e importar parámetros de configuración para distintos usuarios o condiciones de captura.
+- **Estabilidad del enfoque:** Se rediseñó el carro de desplazamiento tras detectar pérdidas de foco entre capturas consecutivas, logrando una mayor precisión en el enfoque automático.
+
+- **Movimiento optimizado:** Se ajustó el código de control para incorporar tiempos de estabilización antes de cada captura, reduciendo vibraciones y mejorando significativamente la calidad de imagen.
+
+- **Interfaz configurable:** Se desarrolló una nueva interfaz que permite al usuario personalizar el número de pasadas, establecer manualmente el punto de enfoque y ajustar los parámetros de la cámara según sus necesidades.
+
+- **Gestión de configuraciones:** Se incorporó un sistema que permite guardar e importar configuraciones personalizadas, facilitando su uso por distintos usuarios o en diferentes condiciones de captura.
+
+
 
 
 ## 🧠 Aplicaciones
