@@ -10,10 +10,11 @@ Este desarrollo toma como punto de partida el proyecto [PiAutoStage](https://sit
 
 Las principales modificaciones implementadas en LitoScan.AR incluyen:
 
-- **Optimización del sistema de captura de imágenes** para generar mosaicos de mayor calidad.
-- **Interfaz de usuario simplificada**, orientada a facilitar su uso por parte de geólogos y técnicos.
-- **Mayor estabilidad en la ejecución automática**, reduciendo errores durante el escaneo.
-- **Compatibilidad con flujos de trabajo en inteligencia artificial**, permitiendo usar los mosaicos como entrada para modelos de clasificación o segmentación petrográfica.
+- **Estabilidad del enfoque:** Se detectó pérdida de foco entre capturas consecutivas, lo que motivó el rediseño del carro de desplazamiento.
+- **Optimización del movimiento:** Se ajustó el código de control del sistema, incorporando tiempos de estabilización previos a cada captura para minimizar vibraciones y mejorar la calidad de imagen.
+- **Configuración flexible:** Se desarrolló una interfaz que permite al usuario definir el número de pasadas, establecer manualmente el punto de enfoque y ajustar parámetros de la cámara.
+- **Gestión de configuraciones personalizadas:** Se implementó un sistema que permite guardar e importar parámetros de configuración para distintos usuarios o condiciones de captura.
+
 
 ## 🧠 Aplicaciones
 
