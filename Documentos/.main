@@ -1,28 +1,32 @@
+from picamera2 import Picamera2
 import time
 import smbus
-import picamera
 
-# Dirección I2C del motor de enfoque
+# Dirección I2C del enfoque automático
 AF_I2C_ADDR = 0x0c
-
 bus = smbus.SMBus(1)
 
-def write_focus(val):
-    data1 = (val >> 8) & 0x3F
-    data2 = val & 0xFF
+# Enviar posición al motor de enfoque
+def set_focus(value):
+    value = int(value)
+    data1 = (value >> 8) & 0x3F
+    data2 = value & 0xFF
     bus.write_i2c_block_data(AF_I2C_ADDR, 0x00, [data1, data2])
+    print(f"Focus set to {value}")
 
-# Código de prueba
-with picamera.PiCamera() as camera:
-    camera.resolution = (1920, 1080)
-    camera.start_preview()
-    time.sleep(2)  # Esperar a que se inicie
+# Inicializar cámara
+picam2 = Picamera2()
+picam2.preview_configuration.main.size = (640, 480)
+picam2.preview_configuration.main.format = "RGB888"
+picam2.configure("preview")
+picam2.start()
+time.sleep(2)
 
-    # Bucle para recorrer valores de enfoque
-    for focus in range(100, 1000, 100):
-        write_focus(focus)
-        print(f"Focus set to {focus}")
-        time.sleep(1)
+# Bucle para probar enfoque manualmente
+for focus_value in range(100, 1000, 100):
+    set_focus(focus_value)
+    time.sleep(1)
 
-    camera.capture("enfoque_prueba.jpg")
-    camera.stop_preview()
+# Capturar imagen final
+picam2.capture_file("autofocus_test.jpg")
+print("Imagen capturada.")
