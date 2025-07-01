@@ -1,1 +1,28 @@
+import time
+import smbus
+import picamera
 
+# Dirección I2C del motor de enfoque
+AF_I2C_ADDR = 0x0c
+
+bus = smbus.SMBus(1)
+
+def write_focus(val):
+    data1 = (val >> 8) & 0x3F
+    data2 = val & 0xFF
+    bus.write_i2c_block_data(AF_I2C_ADDR, 0x00, [data1, data2])
+
+# Código de prueba
+with picamera.PiCamera() as camera:
+    camera.resolution = (1920, 1080)
+    camera.start_preview()
+    time.sleep(2)  # Esperar a que se inicie
+
+    # Bucle para recorrer valores de enfoque
+    for focus in range(100, 1000, 100):
+        write_focus(focus)
+        print(f"Focus set to {focus}")
+        time.sleep(1)
+
+    camera.capture("enfoque_prueba.jpg")
+    camera.stop_preview()
